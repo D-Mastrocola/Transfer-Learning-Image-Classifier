@@ -1,12 +1,30 @@
 <html>
   <head>
+    <title>Image Classifier</title>
     <!-- Load the latest version of TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <div id="console"></div>
-    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    <video
+      autoplay
+      playsinline
+      muted
+      id="webcam"
+      width="400"
+      height="400"
+    ></video>
+    <div id="button-container">
+      <button id="class-a">Smile</button>
+      <button id="class-b">Frown</button>
+      <button id="class-c">Angry</button>
+      <button id="class-d">Confused</button>
+      <button id="class-e">Neutral</button>
+    </div>
+
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
   </body>

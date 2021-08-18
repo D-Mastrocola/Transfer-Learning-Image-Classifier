@@ -1,0 +1,36 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+#console {
+    margin: 20px;
+}
+#button-container {
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#button-container button {
+    width: 200px;
+    height: 75px;
+    margin: 5px;
+}
+button:hover {
+    cursor: pointer;
+}
+#class-a {
+    background: #ff0;
+}
+#class-b {
+    background: #0af;
+}
+#class-c {
+    background: #f00;
+}
+#class-d {
+    background: #a70;
+}
